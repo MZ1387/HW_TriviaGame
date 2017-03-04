@@ -193,12 +193,24 @@ $(document).ready(function() {
         var ifTwo = $(this).text() != game[questionArrayIndex].answer && $("#timerCountdown").text() != "Start Game" && $("#timerCountdown").text() != "Correct!" && $("#timerCountdown").text() != "Nope! It's " + "'" + game[questionArrayIndex].answer + "'";
         // if statements for the blue buttons
         if ($(this).text() === '"Assman"') {
+            seinfeldVandelay.pause();
+            seinfeldTheBro.pause();
+            seinfeldHumanFund.pause();
             seinfeldAssman.play();
         } else if ($(this).text() === '"The Human Fund"') {
+            seinfeldAssman.pause();
+            seinfeldVandelay.pause();
+            seinfeldTheBro.pause();
             seinfeldHumanFund.play();
         } else if ($(this).text() === '"Vandelay Industries"') {
+            seinfeldTheBro.pause();
+            seinfeldHumanFund.pause();
+            seinfeldAssman.pause();
             seinfeldVandelay.play();
         } else if ($(this).text() === '"Manssiere/Bro"') {
+            seinfeldHumanFund.pause();
+            seinfeldAssman.pause();
+            seinfeldVandelay.pause();
             seinfeldTheBro.play();
             // if user button click equals to the current object's answer then do this
         } else if (ifOne) {
