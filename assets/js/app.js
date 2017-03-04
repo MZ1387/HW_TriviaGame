@@ -22,9 +22,9 @@ $(document).ready(function() {
         options: ["Kenny", "Karl", "Cosmo", "Constantine"],
         answer: "Cosmo"
     }, {
-        question: "What does Kramer accuse Calvin Klein of stealing from him?",
-        options: ["His shoes", "His credit card", "A cologne he invented", "An underwear style"],
-        answer: "A cologne he invented"
+        question: "When Kramer has a terrible cough where does he end up going for help?",
+        options: ["To a psychologist", "To a librarian", "To a vetrinarian", "To a priest"],
+        answer: "To a vetrinarian"
     }, {
         question: "What religion did George convert to for Sasha?",
         options: ["Catholicism", "Islam", "Judaism", "Latvian Orthodox"],
@@ -67,7 +67,7 @@ $(document).ready(function() {
     // array index counter
     var questionArrayIndex = 0;
     // default value for question countdown
-    var counterDefault = 24;
+    var counterDefault = 15;
     // variable used to clear the countdown
     var questionInterval;
     // answer is equal to users button click input
@@ -96,7 +96,7 @@ $(document).ready(function() {
         // questionArrayIndex increments for the upcoming question
         questionArrayIndex++;
         // countdown is reset to default value
-        counterDefault = 24;
+        counterDefault = 15;
         // next question is shown
         nextQuestionObject();
     };
@@ -143,7 +143,7 @@ $(document).ready(function() {
     function resetValues() {
         questionArrayIndex = 0;
         userAnswer;
-        counterDefault = 24;
+        counterDefault = 15;
         correctAnswer = 0;
         incorrectAnswer = 0;
         unanswered = 0;
