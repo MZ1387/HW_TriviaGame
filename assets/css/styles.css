@@ -1,0 +1,42 @@
+.mainContent {
+  background-color:#ffffff;
+  border-radius:10px;
+  margin-top:50px;
+}
+
+.logo {
+  margin-top:50px;
+}
+
+.choicesColumn {
+  margin-bottom:25px;
+  margin-top:25px;
+}
+
+.logo .img-responsive {
+  margin:0 auto;
+}
+
+body {
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:14px;
+  line-height:1.42857143;
+  color:#333;
+  background-color:#fff;
+}
+
+.answer {
+  background-color:#0070BC;
+  border:1px solid #ffffff;
+  color:#ffffff;
+  border-radius:5px;
+  padding-bottom:10px;
+}
+
+.timer {
+  background-color:#FCD63C;
+  border-radius:5px;
+  padding-bottom:10px;
+  padding-top:2px;
+}
+
