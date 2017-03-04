@@ -178,6 +178,11 @@ $(document).ready(function() {
             resetValues();
             nextQuestionObject();
         } else if ($(this).text() === "Start Game") {
+            // pause all sound clips when you start the game
+            seinfeldAssman.pause();
+            seinfeldVandelay.pause();
+            seinfeldTheBro.pause();
+            seinfeldHumanFund.pause();
             // play themeSong at game start
             themeSong.play();
             //call the function on page load to have it populate the page h
