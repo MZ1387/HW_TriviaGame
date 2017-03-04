@@ -67,7 +67,7 @@ $(document).ready(function() {
     // array index counter
     var questionArrayIndex = 0;
     // default value for question countdown
-    var counterDefault = 4;
+    var counterDefault = 24;
     // variable used to clear the countdown
     var questionInterval;
     // answer is equal to users button click input
@@ -89,14 +89,14 @@ $(document).ready(function() {
         $("#optionThree").html(game[questionArrayIndex].options[2]);
         $("#optionFour").html(game[questionArrayIndex].options[3]);
         // begins question countdown
-        // countdown();
+        countdown();
     };
 
     function incrementIndex() {
         // questionArrayIndex increments for the upcoming question
         questionArrayIndex++;
         // countdown is reset to default value
-        counterDefault = 4;
+        counterDefault = 24;
         // next question is shown
         nextQuestionObject();
     };
@@ -143,7 +143,7 @@ $(document).ready(function() {
     function resetValues() {
         questionArrayIndex = 0;
         userAnswer;
-        counterDefault = 4;
+        counterDefault = 24;
         correctAnswer = 0;
         incorrectAnswer = 0;
         unanswered = 0;
